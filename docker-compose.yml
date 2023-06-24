@@ -1,8 +1,11 @@
 version: '3.8'
 
 services:
-  # TODO: bind to host port 80
   nginx:
+    image: nginx:latest
     container_name: nginx
+    restart: unless-stopped
+    ports:
+      - "80:80"
     volumes:
-      - ./static:asd:ro
+      - ./static:/usr/share/nginx/html:ro
