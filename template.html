@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Landing Page</title>
+    <link rel="icon" href="favicon.ico" type="image/png" />
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main>
+    <div class="header">
+        <img src="img/raspberry-pi-logo.png" alt="pi-hole logo"/>
+        <span>{{IP_ADDRESS}}</span>
+    </div>
+
+    <div class="content">
+        <div class="services-container">
+            <a class="service" target="_blank" href="http://{{IP_ADDRESS}}:9000">
+                <img src="img/docker-logo.png" alt="docker logo"/>
+                <span>Portainer</span>
+            </a>
+
+            <a class="service" target="_blank" href="http://{{IP_ADDRESS}}:8080/admin">
+                <img src="img/pi-hole-logo.png" alt="pi-hole logo"/>
+                <span>Pi-Hole</span>
+            </a>
+
+            <a class="service" target="_blank" href="http://{{IP_ADDRESS}}:5000">
+                <img src="img/container-logo.svg" alt="reminder logo"/>
+                <span>Reminder</span>
+            </a>
+
+            <!-- Add further services here -->
+        </div>
+    </div>
+</main>
+</body>
+</html>

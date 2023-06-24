@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  # TODO: bind to host port 80
+  nginx:
+    container_name: nginx
+    volumes:
+      - ./static:asd:ro
