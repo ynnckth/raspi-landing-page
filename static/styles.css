@@ -22,6 +22,7 @@ body, div, span, a, p {
     background-color: var(--bg-color-header);
     box-shadow: inset 0 calc(var(--borderWidth-thin, 1px)*-1) var(--border-color-default);
     display: flex;
+    justify-content: space-between;
     align-items: center;
     font-size: 12pt;
     font-weight: 600;
@@ -32,6 +33,10 @@ body, div, span, a, p {
     max-height: 35px;
     margin-left: 15px;
     margin-right: 15px;
+}
+
+.header div {
+    width: 65px;
 }
 
 .content {
@@ -53,7 +58,9 @@ body, div, span, a, p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 45px;
+    margin-left: 45px;
+    margin-right: 45px;
+    margin-bottom: 45px;
 }
 
 .service img {
